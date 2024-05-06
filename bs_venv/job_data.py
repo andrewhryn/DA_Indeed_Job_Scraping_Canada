@@ -1,9 +1,8 @@
-#import library requests + BeautifulSoup using Pip3 
+
+#Step 1: extracting job_title data from Indeed
 
 import requests
 from bs4 import BeautifulSoup
-
-#extracting job_title data from Indeed
 
 def extract(page):
     headers = {
@@ -25,7 +24,7 @@ def transform(soup):
 c = extract(0)
 transform(c)
 
-## geting info for the location and company name: 
+## Step 2: geting info for the location and company name: 
 
 import requests
 from bs4 import BeautifulSoup
@@ -54,13 +53,8 @@ c = extract(0)
 transform(c)
 
 
-## merging this together
-import requests
-from bs4 import BeautifulSoup
+##Step 3: Merging results in the correct order, now we get result in correct order: 1) job tilte, 2) Company, 3) Location
 
-
-
-#Merging in correct order, now we get result in correct order: 1) job tilte, 2) Company, 3) Location
 import requests
 from bs4 import BeautifulSoup
 
@@ -99,7 +93,7 @@ c = extract(0)
 transform(c)
 
 
-# add salary range for existing code, write 'Salary: Not available' if job posting does not have one
+#Step 4: Add salary range for existing code, write 'Salary: Not available' if job posting does not have one
 
 import requests
 from bs4 import BeautifulSoup
@@ -145,7 +139,7 @@ def transform(soup):
 c = extract(0)
 transform(c)
 
-# store result as a list
+#Step 5: store result as a list
 
 import requests
 from bs4 import BeautifulSoup
@@ -201,7 +195,14 @@ c = extract(0)
 result = transform(c)
 print(result)
 
-## now we will save result in pandas data frame for the first 10 pages
+
+
+
+
+
+
+## Step 6: Now importing Pandas, we will save result in pandas data frame for the first 10 pages
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -271,7 +272,7 @@ df = pd.DataFrame(all_job_data)
 print(df)
 
 
-## remvoe salary because it is not working correctly
+## Step 7 remove salary because it is not working correctly
 
 import requests
 from bs4 import BeautifulSoup
@@ -334,7 +335,7 @@ df = pd.DataFrame(all_job_data)
 # Print the DataFrame
 print(df)
 
-# Now same thing but for the first 10 pages
+# Step 8 Now same thing but for the first 10 pages
 
 import requests
 from bs4 import BeautifulSoup
@@ -398,7 +399,7 @@ df = pd.DataFrame(all_job_data)
 print(df)
 
 
-#now saving result set to csv file
+#Step 9: now saving result set to csv file
 
 import requests
 from bs4 import BeautifulSoup
