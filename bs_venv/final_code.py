@@ -1,3 +1,4 @@
+##Please install all libraries before running this code 
 
 import requests
 from bs4 import BeautifulSoup
@@ -46,28 +47,18 @@ def transform(soup):
 # Create an empty list to store all job data
 all_job_data = []
 
-# Initialize page number
-page = 0
-
-# Continue scraping until there are no more job listings
-while True:
+# Iterate through the first 10 pages
+for i in range(0, 10 * 15, 15):  # Scrape 10 pages, each page has 10 listings
     # Extract data from the current page
-    soup = extract(page)
+    soup = extract(i)
     # Transform the data and append it to the list
     page_job_data = transform(soup)
-    if not page_job_data:  # Break the loop if no job listings are found on the page
-        break
     all_job_data.extend(page_job_data)
-    # Move to the next page
-    page += 10
 
 # Convert the list of dictionaries to a Pandas DataFrame
 df = pd.DataFrame(all_job_data)
 
 # Save the DataFrame to a CSV file
-df.to_csv('job_listings_rev.csv', index=False)
+df.to_csv('job_listings.csv', index=False)
 
 print("CSV file saved successfully!")
-
-
-
