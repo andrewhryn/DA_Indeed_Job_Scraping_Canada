@@ -1,6 +1,7 @@
 ##Please install all libraries before running this code 
 
 import requests
+import bs4
 from bs4 import BeautifulSoup
 import pandas as pd
 
@@ -48,7 +49,7 @@ def transform(soup):
 all_job_data = []
 
 # Iterate through the first 10 pages
-for i in range(0, 10 * 15, 15):  # Scrape 10 pages, each page has 10 listings
+for i in range(0, 70 * 15, 15):  # Scrape 10 pages, each page has 10 listings
     # Extract data from the current page
     soup = extract(i)
     # Transform the data and append it to the list
