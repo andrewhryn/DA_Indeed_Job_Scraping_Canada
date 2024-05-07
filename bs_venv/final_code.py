@@ -1,9 +1,18 @@
-##Please install all libraries before running this code 
+##Please install all libraries separately BEFORE running code below
 
+#Step 1
 import requests
-import bs4
+
+#Step 2
 from bs4 import BeautifulSoup
+
+#Step 3
+import bs4
+
+#Step 4
 import pandas as pd
+
+#Step 5 Run code below
 
 def extract(page):
     headers = {
