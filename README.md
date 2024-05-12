@@ -1,5 +1,13 @@
 # 🍲 Indeed Data Analyst Job Scraping Project using Python
 ![alt text](image-1.png)
+
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-1.3.3-blue)](https://pandas.pydata.org/)
+[![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-4.10.0-blue)](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+[![Web](https://img.shields.io/badge/Web-Scraping-yellow)](https://en.wikipedia.org/wiki/Web_scraping)
+[![Data Analyst](https://img.shields.io/badge/Data-Analyst-orange)](https://en.wikipedia.org/wiki/Data_analysis)
+
+
 # :rocket: Introduction
 
 This project aims to scrape job listings for data analyst positions from Indeed using Python. It utilizes web scraping techniques to extract job titles, company names, and locations from the Indeed job search results.
