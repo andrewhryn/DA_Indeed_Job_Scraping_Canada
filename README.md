@@ -1,21 +1,21 @@
-# Indeed Data Analyst Job Scraping Project using Python
+# 🍲 Indeed Data Analyst Job Scraping Project using Python
 ![alt text](image-1.png)
-# Introduction
+# :rocket: Introduction
 
 This project aims to scrape job listings for data analyst positions from Indeed using Python. It utilizes web scraping techniques to extract job titles, company names, and locations from the Indeed job search results.
 
-# Background
+# :clipboard: Background
 
 As I was searching for a dataset of data analyst job postings in Canada, I encountered challenges in finding a comprehensive and up-to-date source. Unable to locate an existing dataset, I embarked on building a solution using Python. Leveraging online guides and seeking assistance from ChatGPT for debugging, I developed a web scraping script to extract job listings from Indeed. This project serves not only as a tool for personal use but also contributes to filling the gap in available datasets for data analyst job postings in Canada.
 
-# Tools I Used
+# :wrench: Tools I Used
 
 - Python
 - Requests library for making HTTP requests
 - BeautifulSoup library for parsing HTML content
 - Pandas library for data manipulation and analysis
 
-# How to Use This Code
+# :computer: How to Use This Code
 
 ### 1. **Navigate to [final_code.py](https://github.com/MadGrib/DA_Indeed_Job_postings_Canada/blob/main/bs_venv/final_code.py)**
 
@@ -51,12 +51,12 @@ You can adjust the number of pages you want to scrape and the number of job list
 for i in range(0, 70 * 15, 15):  # Scrape 70 pages, each page has 15 listings
 ```
 
-# Run the Script:
+# :running: Run the Script:
 
 Once you've made the necessary adjustments, run the script to scrape job listings from Indeed. The extracted data will be stored in a CSV file named `job_listings.csv` in the same directory.
 
 
-# The Analysis
+# :bar_chart: The Analysis
 
 The main steps involved in the analysis are:
 
@@ -66,7 +66,7 @@ The main steps involved in the analysis are:
 4. Storing the data in a Pandas DataFrame.
 5. Saving the DataFrame to a CSV file for further analysis.
 
-# What I Learned
+# :books: What I Learned
 
 Through this project, I gained experience in:
 
@@ -74,6 +74,6 @@ Through this project, I gained experience in:
 - Parsing HTML content with BeautifulSoup.
 - Data manipulation and analysis with Pandas.
 
-# Conclusion
+# :mega: Conclusion
 
 Scraping job listings from Indeed provides valuable insights into the current job market for data analysts. This project demonstrates the power of web scraping and data analysis using Python for extracting useful information from online sources.
