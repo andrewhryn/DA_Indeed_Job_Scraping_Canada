@@ -10,7 +10,7 @@
 
 # :rocket: Introduction
 
-This project aims to scrape job listings for data analyst positions from Indeed using Python. It utilizes web scraping techniques to extract job titles, company names, and locations from the Indeed job search results.
+This project aims to scrape job listings for data analyst positions in :canada: Canada from Indeed using Python. It utilizes web scraping techniques to extract job titles, company names, and locations from the Indeed job search results.
 
 # :clipboard: Background
 
